@@ -40,6 +40,7 @@ gem 'jquery-rails'
 
 # Used for login and authentication
 gem 'devise', :git => 'https://github.com/plataformatec/devise.git'
+gem 'omniauth-ldap', :git => 'https://github.com/intridea/omniauth-ldap.git'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
