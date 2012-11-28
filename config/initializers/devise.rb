@@ -213,7 +213,11 @@ Devise.setup do |config|
   # ==> OmniAuth
   # Add a new OmniAuth provider. Check the wiki for more information on setting
   # up on your models and hooks.
-  # config.omniauth :github, 'APP_ID', 'APP_SECRET', :scope => 'user,public_repo'
+  config.omniauth :ldap, :host => 'ldap1.its.hawaii.edu', :base => 'ou=People, dc=hawaii, dc=edu', :port => 389
+  #  :method => :plain,
+  #  :uid => 'sAMAccountName',
+  #  :bind_dn => 'THE_FULL_DN_OF_THE_USER_YOU_WILL_BIND_WITH',
+  #  :password => 'THE_PASSWORD_OF_THE_BIND_USER'
 
   # ==> Warden configuration
   # If you want to use other strategies, that are not supported by Devise, or
